@@ -1,0 +1,59 @@
+
+$color1: #3D3C47;
+$color2: #35373B;
+$color3: #4F5F69;
+$color4: #b6f7c1;
+
+a{
+    color: white !important;
+    
+}
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: $color4 !important
+}
+b-card-body{
+    color: white !important
+}
+
+#app {
+    
+    color: white !important;
+    text-align: center;
+    background-color: $color2 !important;
+    font-family: Rajdhani;
+  }
+
+#navbar{
+    background-color: $color1;
+    .menulink{
+        color: black !important
+    }
+}
+
+#proyecto{
+    #card{
+        background-color: $color3
+    }
+   
+
+}
+.test{
+    background-color: red
+}
+
+
+.imagennavlogo{
+    width: 40px;
+   height: 40px; 
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+
+  }
+
