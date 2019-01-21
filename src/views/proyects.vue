@@ -1,12 +1,10 @@
 <template>
-
-<proyecto  v-show="cargado"/>
-
-
+  <proyecto v-show="ischarged" v-on:proyectscharged="showproyects"/>
 </template>
 
 <script>
 import Proyecto from '../components/Proyectos.vue'
+
 
 export default {
   components:{
@@ -14,11 +12,20 @@ export default {
   },
   data(){
     return{
-      cargado: false,
+      ischarged: false,
+      test:false
     }
   },
-  beforeMount: function() {
-    this.cargado=true;
+  methods: {
+
+    showproyects(){
+      this.ischarged=true
+      
+      
+    }
+  },
+  destroyed(){
+    this.ischarged=false
   }
 }
 

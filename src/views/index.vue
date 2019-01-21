@@ -1,7 +1,5 @@
 <template>
-<transition name="fade">
-<h2>hola</h2>
-</transition>
+
 </template>
 
 <script>

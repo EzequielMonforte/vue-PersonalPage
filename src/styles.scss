@@ -3,6 +3,9 @@ $color1: #3D3C47;
 $color2: #35373B;
 $color3: #4F5F69;
 $color4: #b6f7c1;
+$fuentetitulos: Ubuntu;
+$fuentecuerpo: Anonymous Pro;
+
 
 a{
     color: white !important;
@@ -12,8 +15,14 @@ a:hover{
     text-decoration-line: underline;
     text-decoration-color: $color4 !important
 }
+
 b-card-body{
     color: white !important
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $fuentecuerpo !important;
+    font-weight: bold !important
 }
 
 #app {
@@ -21,11 +30,15 @@ b-card-body{
     color: white !important;
     text-align: center;
     background-color: $color2 !important;
-    font-family: Rajdhani;
+    font-family: Ubuntu;
+    
+
   }
 
 #navbar{
     background-color: $color1;
+    font-family: $fuentecuerpo !important ;
+    font-weight: bold;
     .menulink{
         color: black !important
     }
@@ -38,8 +51,12 @@ b-card-body{
    
 
 }
-.test{
-    background-color: red
+
+#footer{
+    background-color: $color1;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 0 auto
 }
 
 
@@ -50,6 +67,7 @@ b-card-body{
 
 .fade-enter-active, .fade-leave-active {
     transition: opacity 0.5s;
+
 
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
