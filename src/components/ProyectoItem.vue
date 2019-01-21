@@ -1,9 +1,9 @@
 <template>
-    <div id="card" class="card mb-2 mt-2">
+    <div id="card" class="card mb-2 mt-2 p-3">
         <a :href="proyecto.html_url" target="_blank">
-        <img class="card-img-top p-2" :src='imagen'/>
+        <img class="card-img-top px-1" :src='imagen'/>
         <h3 class="card-title mb-3 p-1">{{proyecto.name}}</h3>
-        <h6 class="card-subtitle p-2">{{proyecto.description}}</h6>
+        <p class="card-subtitle p-2">{{proyecto.description}}</p>
         </a>
     </div>
 </template>
@@ -26,7 +26,7 @@ export default {
 @media(min-width: 576px) {
     .card{
         min-width: 20%;
-        max-width: 25%;
+        max-width: 20%;
     }
     
 }

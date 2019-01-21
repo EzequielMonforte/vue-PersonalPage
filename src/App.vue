@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <nav-bar/>
-    <transition name="fade">
     <router-view></router-view>
-    </transition>
+
     <m-footer/>
   </div>
   

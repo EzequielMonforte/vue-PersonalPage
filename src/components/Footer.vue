@@ -1,11 +1,12 @@
 <template>
-    <footer class="container">
-        <div class="row">
-            <div class="col-6">
-            <h2>footer</h2>
-            <p>sadsdsadsadsadsadsadasas</p>
+    <footer id="footer" class="container-fluid pt-3">
+        <div class="row offset-3 ">
+            <div class="col-4">
+            <h6>{{this.$store.state.userdata.fullname}}</h6>
             </div>
-            <div>asda</div>
+            <div  class="col-4">
+            <h6>sad</h6>
+            </div>
         </div>
     </footer>
 </template>
