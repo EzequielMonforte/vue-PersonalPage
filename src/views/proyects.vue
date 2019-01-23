@@ -1,5 +1,5 @@
 <template>
-  <proyecto v-show="ischarged" v-on:proyectscharged="showproyects"/>
+  <proyecto class="my-4" v-show="ischarged" v-on:proyectscharged="showproyects"/>
 </template>
 
 <script>
