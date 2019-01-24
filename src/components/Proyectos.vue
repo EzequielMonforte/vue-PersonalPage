@@ -1,7 +1,7 @@
 <template>
 <div id="proyecto" class="container">
   <div class="card-deck justify-content-center">
-  <proyecto-item v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
+  <proyecto-item class="shadow" v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
   </div>
 </div>
 </template>

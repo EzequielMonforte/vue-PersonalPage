@@ -3,8 +3,10 @@
         <a :href="proyecto.html_url" target="_blank">
         <img class="card-img-top px-1" :src='imagen'/>
         <h3 class="card-title mb-3 p-1">{{proyecto.name}}</h3>
+    <!-- TODO: control max letters wrapping "..." -->
         <p class="card-subtitle p-2">{{proyecto.description}}</p>
         </a>
+        
     </div>
 </template>
 <script>
@@ -25,8 +27,8 @@ export default {
 <style scoped>
 @media(min-width: 576px) {
     .card{
-        min-width: 20%;
-        max-width: 20%;
+        min-width: 23%;
+        max-width: 28%;
     }
     
 }

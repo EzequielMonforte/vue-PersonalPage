@@ -3,7 +3,7 @@
     <nav-bar/>
     <router-view></router-view>
 
-    <m-footer/>
+    <m-footer class="p-4"/>
   </div>
   
 </template>
