@@ -5,7 +5,10 @@ $color3: #4F5F69;
 $color4: #b6f7c1;
 $fuentetitulos: Ubuntu;
 $fuentecuerpo: Anonymous Pro;
-
+.testindex{
+   height: 1000px;
+    background-color: red
+}
 
 a{
     color: white !important;
@@ -48,11 +51,16 @@ h1,h2,h3,h4,h5,h6{
 
 #proyecto{
     #card{
+        
         background-color: $color3
+    }
+    .card:hover{
+        background-color: lighten($color3, $amount: 4) !important  
     }
    
 
 }
+
 
 #footer{
     background-color: $color1;
@@ -61,10 +69,13 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto
 }
 .icon{
-    
     margin: 0 10px;
-    
-    
+       
+}
+
+.icon:hover{
+
+    width: 8% !important
 }
 
 

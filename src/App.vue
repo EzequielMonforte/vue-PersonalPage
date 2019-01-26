@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <nav-bar/>
+    <transition name="fade">
     <router-view></router-view>
-
+    </transition>
     <m-footer class="p-4"/>
   </div>
   
@@ -16,8 +17,15 @@ export default {
   components:{
     NavBar, MFooter
   },
+  data(){
+    return{
+      test:false
+    }
+  },
   name: 'app',
-
+  mounted: function(){
+        this.$store.dispatch('github', this.$store.state.userdata['github'] )
+  }
 
 }
 </script>

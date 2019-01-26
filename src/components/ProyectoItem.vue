@@ -1,10 +1,12 @@
 <template>
+    
     <div id="card" class="card mb-2 mt-2 p-3">
-        <a :href="proyecto.html_url" target="_blank">
         <img class="card-img-top px-1" :src='imagen'/>
-        <h3 class="card-title mb-3 p-1">{{proyecto.name}}</h3>
+        <a v-if="proyecto" :href="proyecto.html_url" target="_blank">
+        
+        <h3 class="card-title mb-3 p-1" v-if="proyecto">{{proyecto.name}}</h3>
     <!-- TODO: control max letters wrapping "..." -->
-        <p class="card-subtitle p-2">{{proyecto.description}}</p>
+        <p class="card-subtitle p-2" v-if="proyecto">{{proyecto.description}}</p>
         </a>
         
     </div>
@@ -13,7 +15,7 @@
 import picture from '../assets/logo.png'
 export default {
     props:{
-        proyecto: {}
+        proyecto: {},
     },
     name: 'card',
     data (){

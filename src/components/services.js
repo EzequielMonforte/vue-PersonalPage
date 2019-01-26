@@ -1,7 +1,7 @@
 
 function getGithubprofile(vari){
 
-return fetch(vari.toString().replace('www.', 'api.'))
+return fetch(vari.toString().replace('www.', 'https://api.'))
  .then(value=> value.json())
 
 
