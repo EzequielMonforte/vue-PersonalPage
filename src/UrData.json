@@ -1,8 +1,12 @@
 {
+    
     "fullname": "Ezequiel Monforte",
     "nationality": "Argentina",
     "contact": "ezequielmonforte@gmail.com",
-    "github": "www.github.com/users/ezequielmonforte/repos",
-    "linkedin": "www.linkedin.com/ezequielmonforte",
+    "links":{
+        "github": "https://github.com/EzequielMonforte",
+        "linkedin": "https://www.linkedin.com/in/ezequiel-monforte-38a50a13a/"
+    },
+    
     "email": "ezequielmonforte@gmail.com"
 }
