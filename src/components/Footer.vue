@@ -14,7 +14,7 @@
             </div>
             </div>
             <div  class="col-4">
-            <h6>something here ??</h6>
+            <h6>something here a ??</h6>
             </div>
         </div>
     </footer>
