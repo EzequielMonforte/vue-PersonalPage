@@ -1,8 +1,12 @@
 {
+    
     "fullname": "",
     "nationality": "",
     "contact": "",
-    "github":"",
-    "linkedin":"",
+    "links":{
+        "github": "",
+        "linkedin": ""
+    },
+    
     "email": ""
 }

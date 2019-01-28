@@ -4,6 +4,7 @@
             <div class="col-4">
             <h6>{{this.$store.state.userdata.fullname}}</h6>
             <div class="container ">
+                <!-- Todo: oop remades -->
             <a :href="$store.state.userdata.linkedin" target="_blank">
                 <img class="icon" src="../assets/ic-linkedin.svg"/>
             </a>
@@ -13,7 +14,7 @@
             </div>
             </div>
             <div  class="col-4">
-            <h6>sad</h6>
+            <h6>something here a ??</h6>
             </div>
         </div>
     </footer>

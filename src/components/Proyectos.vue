@@ -1,7 +1,7 @@
 <template>
 <div id="proyecto" class="container">
   <div class="card-deck justify-content-center">
-  <proyecto-item class="shadow" v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
+  <proyecto-item  class="shadow" v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
   </div>
 </div>
 </template>
@@ -15,30 +15,18 @@ export default {
   },
   data (){
     return{
-      total:0,
-      proyects:[],
-      userdata: this.$store.state.userdata,
+      total:0, 
     }
   },
   computed:{
+    proyects(){
+      return this.$store.state.proyects
+    },
     Mproyects(){
       return this.proyects.filter(proyecto=> proyecto.fork==false)
     }
+
   } ,
-
-  methods:{
-    GetGitProyects: function(){
-      GitService(this.userdata['github']).then(res=>{
-        this.proyects= res;
-        this.$emit('proyectscharged')
-        })
-        }
-  },
-  created: function(){
-
-    this.GetGitProyects()
-  }
-
 
 }
 </script>

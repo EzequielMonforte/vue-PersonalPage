@@ -1,5 +1,5 @@
 <template>
-  <proyecto class="my-4" v-show="ischarged" v-on:proyectscharged="showproyects"/>
+  <proyecto/>
 </template>
 
 <script>
@@ -12,21 +12,10 @@ export default {
   },
   data(){
     return{
-      ischarged: false,
-      test:false
-    }
-  },
-  methods: {
 
-    showproyects(){
-      this.ischarged=true
-      
-      
     }
   },
-  destroyed(){
-    this.ischarged=false
-  }
+
 }
 
 </script>
