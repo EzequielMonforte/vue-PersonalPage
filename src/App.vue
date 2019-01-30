@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <nav-bar/>
+    <m-page-loader v-show="this.$store.state.loading"/>
     <transition name="fade">
     <router-view></router-view>
     </transition>
@@ -13,9 +14,10 @@
 import './styles.scss'
 import NavBar from './components/NavBar'
 import MFooter from './components/Footer'
+import MPageLoader from './components/shared/Loader.vue'
 export default {
   components:{
-    NavBar, MFooter
+    NavBar, MFooter, MPageLoader
   },
   data(){
     return{
