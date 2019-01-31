@@ -1,9 +1,11 @@
 <template>
-<div id="proyecto" class="container">
-  <div class="card-deck justify-content-center">
+
+
+  <div id="proyecto" class="proy-container container">
+
   <proyecto-item  class="shadow" v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
   </div>
-</div>
+
 </template>
 
 <script>

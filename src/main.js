@@ -10,6 +10,7 @@ import store from './store';
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
+
 Vue.config.productionTip = false
 
 const router= new Router({routes})

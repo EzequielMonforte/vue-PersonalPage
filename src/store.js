@@ -22,11 +22,17 @@ Vue.use(Vuex)
 const store =new Vuex.Store({
     state: {
       userdata,
-      proyects:[]
+      proyects:[],
+      loading:false
     },
     mutations: {
       assigngithub(state, res) {
         state.proyects= res;
+
+      },
+      loader(state, boolean){
+        state.loading= boolean
+
       }
     },
     actions:{
