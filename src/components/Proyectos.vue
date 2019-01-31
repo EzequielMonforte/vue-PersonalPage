@@ -1,6 +1,8 @@
 <template>
 
+
   <div id="proyecto" class="proy-container container">
+
   <proyecto-item  class="shadow" v-for="proyect in Mproyects" :key="proyect.id"  :proyecto="proyect"/>
   </div>
 

@@ -24,6 +24,11 @@ export default {
       test:false
     }
   },
+  data(){
+    return{
+      test:false
+    }
+  },
   name: 'app',
   mounted: function(){
         this.$store.dispatch('github', this.$store.state.userdata['github'] )

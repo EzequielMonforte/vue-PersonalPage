@@ -1,5 +1,6 @@
 <template>
     
+
     <div id="card" class="proy-item mx-2 mb-2 mt-2 p-3">
         <a v-if="proyecto" :href="proyecto.html_url" target="_blank">
         <img class="card-img-top px-1" :src='imagen'/>

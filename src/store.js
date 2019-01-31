@@ -28,9 +28,11 @@ const store =new Vuex.Store({
     mutations: {
       assigngithub(state, res) {
         state.proyects= res;
+
       },
       loader(state, boolean){
         state.loading= boolean
+
       }
     },
     actions:{
