@@ -101,15 +101,15 @@ $fuentecuerpo: Anonymous Pro;
 
   }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:375px){
     #proyecto{
-        #card.proy-item{
+        .proy-item{
             
-            width: 100%
+            width: 100% !important
         }
     }
 }
-@media screen and (min-width:426px)and (max-width:768px){
+@media screen and (max-width:768px){
     #proyecto{
         #card.proy-item{
             

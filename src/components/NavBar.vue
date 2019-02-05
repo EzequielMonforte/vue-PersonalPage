@@ -1,6 +1,6 @@
 <template>
 
-    <nav id="navbar" class="navbar bar row m-0">
+    <nav id="navbar" class="navbar bar row m-0 shadow">
         <div class="navbar-brand mr-1">
             <img class="imagennavlogo" src="../assets/logopagina.png" alt="">
         </div>

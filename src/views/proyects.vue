@@ -1,5 +1,7 @@
 <template>
+
   <proyecto/>
+
 </template>
 
 <script>
