@@ -5,10 +5,10 @@
             <h6>{{this.$store.state.userdata.fullname}}</h6>
             <div class="container ">
                 <!-- Todo: oop remades -->
-            <a :href="$store.state.userdata.linkedin" target="_blank">
+            <a :href="$store.state.userdata.links.linkedin" target="_blank">
                 <img class="icon" src="../assets/ic-linkedin.svg"/>
             </a>
-            <a :href="$store.state.userdata.github">
+            <a :href="$store.state.userdata.links.github">
             <img class="icon" src="../assets/ic-github.svg"/>
             </a>
             </div>
