@@ -1,10 +1,13 @@
 <template>
 
-    <nav id="navbar" class="navbar bar row m-0 shadow">
-        <div class="navbar-brand mr-1">
+    <b-navbar toggleable="md" id="navbar" class="shadow">
+        
+        <b-navbar-brand class=" mr-1">
             <img class="imagennavlogo" src="../assets/logopagina.png" alt="">
-        </div>
-        <ul class="nav">
+        </b-navbar-brand>
+        
+        <b-collapse is-nav id="nav_collapse">
+        <ul class="nav links-navbar">
             <li class="nav-item">
                 <router-link class="nav-link" to="/"> Home </router-link>
             </li>
@@ -15,8 +18,9 @@
                 <b-dropdown-item class="menulink" :href="'mailto:'+ email">Mail</b-dropdown-item>
             </b-nav-item-dropdown>        
         </ul>
-
-    </nav>
+        </b-collapse>
+        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+    </b-navbar>
 
 </template>
 

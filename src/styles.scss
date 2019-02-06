@@ -36,7 +36,21 @@ $fuentecuerpo: Anonymous Pro;
     background-color: $color1;
     font-family: $fuentecuerpo ;
     font-weight: bold;
-
+    flex-wrap: nowrap;
+    .navbar{
+        width: 100%
+    }
+    .navbar-toggler{
+        
+    }
+    #nav_collapse{
+        justify-content: flex-end
+    }
+    .links-navbar{
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end
+    }
 }
 
 #proyecto{
@@ -61,6 +75,7 @@ $fuentecuerpo: Anonymous Pro;
 }
 
 .proy-container{
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +124,16 @@ $fuentecuerpo: Anonymous Pro;
         }
     }
 }
+@media screen and (max-width:425px){
+    #navbar{
+        .nav{
+            display:flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column
+        }
+    }
+}
 @media screen and (max-width:768px){
     #proyecto{
         #card.proy-item{
@@ -116,5 +141,6 @@ $fuentecuerpo: Anonymous Pro;
             width: 40%
         }
     }
+
 }
 
