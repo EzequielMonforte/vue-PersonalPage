@@ -1,13 +1,14 @@
 <template>
-<div class="testindex"></div>
+ <home/>
 </template>
 
 <script>
+import Home from '../components/Home'
 import Proyecto from '../components/Proyectos.vue'
 
 export default {
   components:{
-    Proyecto
+    Proyecto, Home
   },
 
 }

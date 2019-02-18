@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav-bar/>
-    <m-page-loader v-show="this.$store.state.loading"/>
+    <!-- <m-page-loader message="test" v-show="this.$store.state.loading"/> -->
     <transition name="fade">
     <router-view></router-view>
     </transition>

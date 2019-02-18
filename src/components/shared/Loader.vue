@@ -5,9 +5,10 @@
 </template>
 
 <script>
+//todo: add styles
 export default {
     props:{
-        message,
+        message: "g",
     }
 }
 </script>
