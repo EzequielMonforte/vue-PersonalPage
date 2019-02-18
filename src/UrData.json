@@ -7,6 +7,15 @@
         "github": "",
         "linkedin": ""
     },
+    "skills": {
+        "languajes":[
+            ["lenguaje", 100]
+
+        ],
+        "frameworks":[
+            ["framework", 100] 
+        ]
+    },
     
     "email": ""
 }
