@@ -1,14 +1,14 @@
 <template>
- <home/>
+ <skills/>
 </template>
 
 <script>
-import Home from '../components/Home'
+import Skills from '../components/Skills.vue'
 import Proyecto from '../components/Proyectos.vue'
 
 export default {
   components:{
-    Proyecto, Home
+    Proyecto, Skills
   },
 
 }

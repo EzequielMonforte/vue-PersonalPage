@@ -8,7 +8,7 @@
             <a :href="$store.state.userdata.links.linkedin" target="_blank">
                 <img class="icon" src="../assets/ic-linkedin.svg"/>
             </a>
-            <a :href="$store.state.userdata.links.github">
+            <a :href="$store.state.userdata.links.github" target="_blank">
             <img class="icon" src="../assets/ic-github.svg"/>
             </a>
             </div>
