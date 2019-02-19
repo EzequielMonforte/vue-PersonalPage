@@ -18,9 +18,7 @@ export default {
     },
     data(){
         return{
-            //FIXME: order by percent
-            userdata: this.$store.state.userdata,
-            skills: this.$store.state.userdata.skills
+            skills: this.$store.getters.skillsOrdered
         }
     }
 }

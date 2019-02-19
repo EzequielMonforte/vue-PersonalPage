@@ -25,6 +25,18 @@ const store =new Vuex.Store({
       proyects:[],
       loading:false
     },
+    getters:{
+      skillsOrdered: state =>{
+        let returned= new Object(state.userdata.skills)
+          for (const key in returned) {
+            if (returned.hasOwnProperty(key)) {
+              var element = returned[key];
+              element.sort((a,b)=> b[1]-a[1])
+            }
+          }
+         return returned 
+      }
+    },
     mutations: {
       assigngithub(state, res) {
         state.proyects= res;
