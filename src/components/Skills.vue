@@ -1,14 +1,17 @@
 <template>
     <div class="container my-2">
-        <h2>Lenguajes</h2>
-        <m-item v-for="skill in skills" :text="skill[0]"  :progress="skill[1]" ></m-item>
-        <h2>Frameworks</h2>
+        <div class="py-2" :key="key" v-for="(skill, key) in skills">
+            <h3 class="text-left">{{key.charAt(0).toUpperCase() + key.slice(1)}}</h3>
+            <m-item :key="key" v-for="(item, key) in skill" :text="item[0]"  :progress="item[1]" />
+        </div>
         
     </div>
 </template>
 
 <script>
 import MItem from './SkillItem.vue'
+
+
 export default {
     components:{    
         MItem
@@ -16,7 +19,8 @@ export default {
     data(){
         return{
             //FIXME: order by percent
-            skills: this.$store.state.userdata.skills.languajes
+            userdata: this.$store.state.userdata,
+            skills: this.$store.state.userdata.skills
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <skills/>
+    <skills id="skills"/>
 </template>
 
 <script>

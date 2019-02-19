@@ -53,6 +53,18 @@ $fuentecuerpo: Anonymous Pro;
     }
 }
 
+#skills{
+    h3{
+        text-decoration: underline;
+    }
+    .progress{
+        background: $color1
+    }
+    .progress-bar{
+        background: lighten($color3, $amount: 25) 
+    }
+}
+
 #proyecto{
 
     #card.proy-item{
@@ -137,6 +149,11 @@ $fuentecuerpo: Anonymous Pro;
             justify-self: flex-end
         }
 
+    }
+    #skills{
+        h3{
+            text-align: center !important
+        }
     }
 }
 @media screen and (max-width:768px){
