@@ -7,8 +7,7 @@
         
         
         <h3 class="card-title mb-3 p-1" v-if="proyecto">{{proyecto.name}}</h3>
-    <!-- TODO: control max letters wrapping "..." -->
-        <p class="card-subtitle p-2" v-if="proyecto">{{proyecto.description}}</p>
+        <p class="card-subtitle p-2" v-if="proyecto">{{description}}</p>
         </a>
         
     </div>
@@ -25,6 +24,17 @@ export default {
         imagen:picture,
         }
 
+    },
+    computed:{
+        description: function() {
+            if(this.proyecto.description){
+                if(this.proyecto.description.length > 100){
+                    return this.proyecto.description.substr(0, 100)+ '...'
+                }else return this.proyecto.description
+            }else{
+                return 'No description'
+            }
+        }
     }
 }
 </script>
